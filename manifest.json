@@ -1,0 +1,140 @@
+{
+  "id": "dev.colink.plugin.counter",
+  "name": {
+    "en": "Counter",
+    "zh-CN": "计数器",
+    "ja": "カウンター",
+    "ko": "카운터",
+    "zh-TW": "計數器",
+    "de": "Zähler",
+    "es": "Contador",
+    "ru": "Счётчик"
+  },
+  "description": {
+    "en": "Official CastBoard example plugin demonstrating navigation, configuration, lifecycle hooks, and local storage.",
+    "zh-CN": "CastBoard 官方示例插件，用于演示导航、配置、生命周期钩子和本地存储。",
+    "ja": "ナビゲーション、設定、ライフサイクルフック、ローカルストレージを実演する CastBoard 公式サンプルプラグインです。",
+    "ko": "탐색, 구성, 수명 주기 훅, 로컬 저장소를 보여 주는 CastBoard 공식 예제 플러그인입니다.",
+    "zh-TW": "CastBoard 官方範例外掛，用於示範導覽、設定、生命週期掛鉤和本機儲存空間。",
+    "de": "Offizielles CastBoard-Beispiel-Plugin für Navigation, Konfiguration, Lebenszyklus-Hooks und lokalen Speicher.",
+    "es": "Complemento de ejemplo oficial de CastBoard que muestra navegación, configuración, ciclos de vida y almacenamiento local.",
+    "ru": "Официальный пример плагина CastBoard, демонстрирующий навигацию, настройку, хуки жизненного цикла и локальное хранилище."
+  },
+  "version": "1.0.0",
+  "minCastBoardVersion": "2.3.0",
+  "type": "navigable",
+  "entry": "index.js",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "step": {
+        "type": "integer",
+        "default": 1,
+        "minimum": 1,
+        "maximum": 10,
+        "title": {
+          "en": "Counter step",
+          "zh-CN": "计数步长",
+          "ja": "カウンターの増分",
+          "ko": "카운터 단계",
+          "zh-TW": "計數步長",
+          "de": "Zählerschritt",
+          "es": "Paso del contador",
+          "ru": "Шаг счётчика"
+        },
+        "description": {
+          "en": "Amount added or subtracted with each click.",
+          "zh-CN": "每次点击时增加或减少的数值。",
+          "ja": "クリックするたびに増減する値です。",
+          "ko": "클릭할 때마다 더하거나 빼는 값입니다.",
+          "zh-TW": "每次點擊時增加或減少的數值。",
+          "de": "Wert, der bei jedem Klick addiert oder subtrahiert wird.",
+          "es": "Cantidad que se suma o resta con cada clic.",
+          "ru": "Значение, которое прибавляется или вычитается при каждом нажатии."
+        }
+      },
+      "showDetails": {
+        "type": "boolean",
+        "default": true,
+        "title": {
+          "en": "Show details",
+          "zh-CN": "显示详情",
+          "ja": "詳細を表示",
+          "ko": "세부 정보 표시",
+          "zh-TW": "顯示詳細資料",
+          "de": "Details anzeigen",
+          "es": "Mostrar detalles",
+          "ru": "Показывать сведения"
+        },
+        "description": {
+          "en": "Show the plugin information panel.",
+          "zh-CN": "显示插件的信息面板。",
+          "ja": "プラグインの情報パネルを表示します。",
+          "ko": "플러그인 정보 패널을 표시합니다.",
+          "zh-TW": "顯示外掛程式的資訊面板。",
+          "de": "Zeigt den Informationsbereich des Plugins an.",
+          "es": "Muestra el panel de información del complemento.",
+          "ru": "Показывает информационную панель плагина."
+        }
+      },
+      "accent": {
+        "type": "string",
+        "default": "blue",
+        "enum": ["blue", "green", "purple"],
+        "enumTitles": {
+          "blue": {
+            "en": "Blue",
+            "zh-CN": "蓝色",
+            "ja": "青",
+            "ko": "파랑",
+            "zh-TW": "藍色",
+            "de": "Blau",
+            "es": "Azul",
+            "ru": "Синий"
+          },
+          "green": {
+            "en": "Green",
+            "zh-CN": "绿色",
+            "ja": "緑",
+            "ko": "초록",
+            "zh-TW": "綠色",
+            "de": "Grün",
+            "es": "Verde",
+            "ru": "Зелёный"
+          },
+          "purple": {
+            "en": "Purple",
+            "zh-CN": "紫色",
+            "ja": "紫",
+            "ko": "보라",
+            "zh-TW": "紫色",
+            "de": "Violett",
+            "es": "Morado",
+            "ru": "Фиолетовый"
+          }
+        },
+        "title": {
+          "en": "Accent color",
+          "zh-CN": "强调色",
+          "ja": "アクセントカラー",
+          "ko": "강조 색상",
+          "zh-TW": "強調色",
+          "de": "Akzentfarbe",
+          "es": "Color de acento",
+          "ru": "Цвет акцента"
+        },
+        "description": {
+          "en": "Choose the accent color used by action buttons.",
+          "zh-CN": "选择操作按钮使用的强调色。",
+          "ja": "操作ボタンに使用するアクセントカラーを選択します。",
+          "ko": "작업 버튼에 사용할 강조 색상을 선택합니다.",
+          "zh-TW": "選擇操作按鈕使用的強調色。",
+          "de": "Wählt die Akzentfarbe für Aktionsschaltflächen aus.",
+          "es": "Elige el color de acento de los botones de acción.",
+          "ru": "Выбирает акцентный цвет для кнопок действий."
+        }
+      }
+    }
+  }
+}
